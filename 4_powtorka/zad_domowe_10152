@@ -1,0 +1,252 @@
+//github 4_powtorka
+
+//               ZADANIE 2
+//Console.WriteLine("Podaj swoje imię:");
+//var name = Console.ReadLine();
+//Console.WriteLine("Hello " + name);
+
+//              ZADANIE 3 
+
+// int result = 5 + 9 / Błędem jest brak średnika, który jest wymagany w jeżyku c# na końcu linijki
+
+// poprawne rozwiazanie ponizej, razem z poleceniem wyswietlenia wyniki
+// int result = 5 + 9;
+//Console.WriteLine(result);
+
+//             Operatory:
+//             ZADANIE 1
+
+//Zmienna o nazwie number przechowująca liczbę całkowitą.
+//Zmienna o nazwie money przechowująca liczbę zmiennoprzecinkową (float).
+//Zmienna o nazwie text przechowująca tekst.
+//Zmienna o nazwie isLogged przechowująca wartość logiczną.
+//Zmienna o nazwie myChar przechowująca pojedynczy znak.
+//Zmienna o nazwie price przechowująca liczbę zmiennoprzecinkową z największą precyzją (decimal)
+
+//int number = 2;
+//Console.WriteLine(number);
+//float money = 2.51F;
+//Console.WriteLine(money);
+//string text = "Ala ma kota.";
+//Console.WriteLine(text);
+//bool isLogged = false;
+//Console.WriteLine(isLogged);
+//char bigA = 'A';
+//Console.WriteLine(bigA);
+//decimal price = 2.62838282M;
+//Console.WriteLine(price);
+
+// Float - 7 digits (32 bit )
+// Double - 15-16 digits ( 64 bit)
+// Decimal - 28-29 significant digits ( 128 bit)
+
+//ZADANIE 2
+//string myAge = "Age: ";
+//int wifeAge = 18;
+
+//string result = myAge + wifeAge;
+//Console.WriteLine(result);
+
+//Console.ReadLine();
+
+//WNIOSEK:nie da się bezpośrednio dodać string i int, natomiast można połączyć je za pomocą operatora "+"
+
+//          ZADANIE 3 
+
+//bool isTrue = true;
+//Console.WriteLine(isTrue);
+//bool isFalse = false;
+//Console.WriteLine(isFalse);
+//bool isReallyTrue = true;
+//Console.WriteLine(isReallyTrue);
+
+//bool and = isTrue && isFalse;
+//bool or = isTrue || isReallyTrue;
+//bool negative = !isFalse;
+
+//Console.WriteLine("Wynik and = " + and);
+//Console.WriteLine("Wynik or = " + or);
+//Console.WriteLine("Wynik negative = " + negative);
+
+//          ZADANIE 4 
+
+//int a = 5;
+//int b = 12;
+
+//float add = a + b;
+//Console.WriteLine( "a + b = " + add);
+//float sub = a - b;
+//Console.WriteLine("a - b = " + sub);
+//float mul = a * b;
+//Console.WriteLine("a * b = " + mul);
+//float div = a / b;
+//Console.WriteLine("a / b = " + div);
+//float mod = a % b;
+//Console.WriteLine("a % b = " + mod);
+
+
+//         ZADANIE 5 
+
+//string a = "Ala ";
+//string b = "ma ";
+//string c = "kota.";
+
+//    string result = a + b + c;
+//Console.WriteLine(result);
+
+//wnioski: wynik ( a+ b + c) oznacza łączenie [konkatencja] trzech zmiennych typu string.
+
+
+//           Instrukcje sterujące i pętle 
+//                 ZADANIE 1
+
+//int n1 = 10;
+//int n2 = 20;
+
+//if ( n1 > n2)
+//{
+//    Console.WriteLine("n1 jest większe od n2");
+//} else if (n1 == n2)
+//{
+//    Console.WriteLine("n1 i n2 są równe");
+//} else
+//{
+//    Console.WriteLine("n1 jest mniejsze od n2");
+//}
+//Console.ReadLine();
+
+//                  ZADANIE 2 
+
+//pętla for
+
+//for (int i = 0; i < 10; i++)
+//{
+//    Console.WriteLine("C#");
+//}
+
+//// pętla while 
+//int j= 0;
+
+//while ( j< 10)
+//{
+//    Console.WriteLine("C#");
+//    j++;
+//}
+
+//                  ZADANIE 3
+
+//int n = 10;
+//for (int i = 0; i <= n; i++)
+//{
+//    if (i % 2 == 0)
+//    {
+//        Console.WriteLine($"{i} - Przysta");
+//    }
+//    else
+//    {
+//        Console.WriteLine($"{i} - Nieparzysta");
+//    }
+//}
+
+//                     ZADANIE 4 * DODATKOWE
+
+//int n = 5;
+
+//for (int i = 0; i <= n; i++)
+//{
+//    for (int j = 1; j <= i; j++)
+//    {
+
+//        Console.Write("* ");
+//    }
+//    Console.WriteLine();
+
+//}
+
+
+//                   ZADANIE 5 * DODATKOWE
+
+//Console.WriteLine("Wpisz uzyskana liczbę punktów 0-100 z testu ");
+
+//int exam = Convert.ToInt32(Console.ReadLine());
+
+//if (exam >= 0 && exam <= 39)
+//{
+//    Console.WriteLine("Ocena: Niedostateczna");
+//}
+//else if (exam >= 40 && exam <= 54)
+//{
+//    Console.WriteLine("Ocena: Dopuszczająca");
+//}
+//else if (exam >= 55 && exam <= 69)
+//{
+//    Console.WriteLine("Ocena: Dostateczna");
+//}
+//else if (exam >= 70 && exam <= 84)
+//{
+//    Console.WriteLine("Ocena: Dobra");
+//}
+//else if (exam >= 85 && exam <= 98)
+//{
+//    Console.WriteLine("Ocena: Bardzo Dobra");
+//}
+//else if (exam >= 99 && exam <= 100)
+//{
+//    Console.WriteLine("Ocena: Celująca");
+//}
+//else
+//{
+//    Console.WriteLine("Wartość poza zakresem");
+//}
+
+
+//                                 Kolekcje 
+
+//                                 ZADANIE 1
+
+
+//string[] colors = new string[4] { "czerwony", "zielony", "pomarańczowy", "różowy"};
+
+//Console.WriteLine("Mój pierwszy kolor to: " + colors[0]);
+//Console.WriteLine("Mój ostatni kolor to: " + colors[colors.Length - 1]);
+
+//                                  ZADANIE 2 
+
+//int[] liczby = new int[] { 1, 5, 10, 15, 20, 25, 30, 35, 40, 45 };
+
+//Console.WriteLine("Pętla for:");
+//for (int i = 0; i < liczby.Length; i++)
+//{
+//    Console.WriteLine("Liczba: " + liczby[i]);
+//}
+
+//Console.WriteLine("\nPętla foreach:");
+//foreach (int liczba in liczby)
+//{
+//    Console.WriteLine("Liczba: " + liczba);
+//}
+
+//Console.WriteLine("\nPętla while:");
+//int j = 0;
+//while (j < liczby.Length)
+//{
+//    Console.WriteLine("Liczba: " + liczby[j]);
+//    j++;
+//}
+
+//                                 ZADANIE 3 
+
+//List<string> fruits = new List<string>() { "Truskawka", "Jabłko", "Arbuz", "Banan" };
+
+//Console.WriteLine(string.Join(", ", fruits));
+
+//fruits.RemoveAt(0);
+//fruits.Remove(fruits[fruits.Count - 1]);
+
+//Console.WriteLine(string.Join(", ", fruits)); 
+
+//Console.ReadLine();
+
+
+
+ 
